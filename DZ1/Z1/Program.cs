@@ -4,6 +4,13 @@ int n1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите 2 число: ");
 int n2 = Convert.ToInt32(Console.ReadLine());
 int Max = 0;
-if(n1 < n2) Max = n2;
-else Max = n1;
-Console.WriteLine("Max = " + Max);
+if(n1 < n2){
+     Max = n2;
+    Console.WriteLine("Max = " + Max);
+}
+else if (n1 > n2) 
+{
+    Max = n1;
+    Console.WriteLine("Max = " + Max);
+}
+else Console.WriteLine("Числа равны");
